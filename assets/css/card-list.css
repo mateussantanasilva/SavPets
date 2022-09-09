@@ -1,0 +1,80 @@
+/*=============== GENERAL SETTINGS CARD LIST PUBLIC PAGES===============*/
+.container-cards_list{
+    display: flex;
+    align-items: stretch;
+    justify-content: left;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+}
+
+.container-cards_item{
+    max-width: 25.8rem;
+    flex: 1 25.8rem;
+    padding: 3rem 1.3rem;
+
+    background-color: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 1rem;
+
+    transition: 300ms;
+}
+
+.container-cards_item:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 2px 8px 30px 2px;
+}
+
+.container-cards_item > h4{
+    text-align: center;
+
+    margin-bottom: 2.5rem;
+}
+
+.container-item_information{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.container-information_content > h6,
+.container-information_content > p{
+    font-size: 1.5rem;
+}
+
+.container-item_btns{
+    margin-top: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    gap: .5rem;
+}
+
+.container-item_btns > .btn{
+    width: 100%;
+}
+
+.container-item_btns > button{
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.container-item_btns > button:hover{
+    filter: brightness(1.2);
+}
+
+@media (max-width: 1115px) {
+    .container-cards_list{
+        justify-content: center;
+    }
+
+    .container-cards_item{
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    .container-cards_item{
+        max-width: 100%;
+    }
+}
+

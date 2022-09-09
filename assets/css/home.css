@@ -1,0 +1,299 @@
+/* =============== PRESENTATION SETTINGS =============== */
+#header.content{
+    background-color: transparent;
+}
+
+#header.fixed-menu{
+    background-color: var(--secondary-color);
+}
+
+.presentation.content{
+    padding-block: 0;
+}
+
+.presentation-container{
+    background: url(../img/background-image.png) no-repeat 62%;
+    background-size: cover;
+    
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+}
+
+.presentation-container_welcome h1{
+    margin-block: 1.8rem;
+}
+
+.presentation-welcome_description{
+    color: #fff;
+    font-weight: 400;
+
+    width: min(60rem, 80%);
+    margin-bottom: 1.8rem;
+}
+
+.presentation-welcome-btns{
+    display: flex;
+    gap: 2rem;
+}
+
+.presentation-welcome-btns .btn{
+    padding: 1.2rem 2.8rem;
+}
+
+/* =============== OPTIONS HELP SETTINGS =============== */
+.optionshelp-paws{
+    width: 100%;
+    position: absolute;
+    bottom: -55rem;
+}
+
+.optionshelp-container > h3{
+    color: var(--paragraph-color);
+    margin-bottom: 5rem;
+}
+
+.optionshelp-container_group{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.optionshelp-group_card {
+    display: flex;
+    justify-content: space-between;
+    flex: 1 1 35rem;
+
+    max-width: 45rem;
+    border-radius: 1rem;
+    background: url(../img/option-help1.png) right bottom no-repeat;
+    background-size: contain;
+
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.optionshelp-group_card:nth-child(2) {
+    background-image: url(../img/option-help2.png);
+}
+
+.optionshelp-group_card:nth-child(3) {
+    background-image: url(../img/option-help3.png);
+}
+
+.optionshelp-card_information{
+    padding: 3.5rem 0 3.5rem 2.5rem;
+}
+
+.optionshelp-card_information > .btn{
+    background-color: var(--primary-color);
+    padding: .2rem .8rem;
+    
+    border-color: transparent;
+    border-radius: 1rem;
+
+    font-size: 1.2rem;
+}
+
+.optionshelp-card_information > .btn:hover{
+    filter: brightness(1.1);
+}
+
+.optionshelp-card_information > h4{
+    font-size: 1.6rem;
+    color: var(--paragraph-color);
+    
+    width: 12.5rem;
+    margin-block: 2rem 1.2rem;
+}
+
+.optionshelp-card_information > p:not(.btn){
+    font-size: 1.2rem;
+    width: 60%;
+}
+
+.optionshelp-group_card > img{
+    width: 100%;
+}
+
+/* =============== ABOUT SETTINGS =============== */
+.about-container,
+.difference-container, /*Configurações das diferenças*/
+.contact-container{ /*Configurações de contato*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+}
+
+.about-container > img{
+    width: min(45rem, 50%);
+}
+
+.about-container_description{
+    width: min(45.2rem, 90%);
+}
+
+.about-container_description > h2,
+.difference-container_description h2, /*Configurações das diferenças*/
+.difference-container_description > p,
+.start-container_description > h2, /*Configurações de começar*/
+.contact-container_informations > h2{ /*Configurações de contato*/ 
+    margin-bottom: 2.5rem;
+}
+
+/* =============== DIFFERENCE SETTINGS =============== */
+.difference-container_description{
+    width: min(46rem, 90%);
+}
+
+.difference-container_description > .btn{
+    padding: 1.2rem 2.8rem;
+    border-color: var(--primary-color);
+    background-color: var(--primary-color);
+}
+
+.difference-container_highlights{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+
+    width: min(42.5rem, 90%);
+}
+
+.difference-highlights_item{
+    flex: 1 1 20rem;
+}
+
+.difference-highlights_item > h4{
+    color: var(--paragraph-color);
+
+    margin-block: 1rem;
+}
+
+/* =============== START SETTINGS =============== */
+.start{
+    background-color: var(--primary-color);
+}
+
+.start-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.start-container_description{
+    width: min(62rem, 90%);
+}
+
+.start-container_description > h2,
+.start-container_description > p{
+    color: #fff;
+}
+
+.start-container > .btn{
+    padding: 1.2rem 2.8rem;
+    border-color: #fff;
+    background-color: #fff;
+
+    color: var(--primary-color);
+    font-size: 1.6rem;
+}
+
+/* =============== CONTACT SETTINGS =============== */
+.contact-container{
+    align-items: flex-start;
+}
+
+.contact-container_informations{
+    width: min(48rem, 90%);
+}
+
+.contact-informations_options{
+    margin-top: 2.5rem;
+}
+
+.contact-options_item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+
+    margin-bottom: 1rem;
+}
+
+.contact-options_item:last-child{
+    margin-bottom: 0;
+}
+
+/* =============== RESPONSIVE SETTINGS =============== */
+@media (max-width: 1014px){
+    .difference-container{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 835px) {
+    h2{
+        font-size: 3rem;
+    }
+
+    .start-container{
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .presentation-container_welcome h1{
+        font-size: 3.2rem;
+    }
+    
+    .optionshelp-container_group{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .about-container > img{
+        display: none;
+    }
+
+    .contact-container{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 425px) {
+    .optionshelp-paws{
+        width: 60%;
+    }
+}
+
+@media (max-width: 375px) {    
+    .presentation-container_welcome{
+        text-align: center;
+    }
+    
+    .presentation-welcome_description{
+        width: auto;
+    }
+
+    .presentation-welcome-btns{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h2{
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .presentation-container_welcome{
+        margin-block: calc(var(--height-nav) + 4rem);
+    }
+} 
