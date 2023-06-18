@@ -1,3 +1,10 @@
+# SavPets
+Plataforma que permite gerenciar os dados internos da empresa responsável por cuidar dos animais, além de divulgar os pets que precisam de algum tipo ajuda por meio de campanhas de adoção.
+
+<div align="center">
+    <img src="./.github/front-cover.webp" width="90%" />
+</div>
+
 ### Fatec ZL - Centro Paula Souza
 ##### Disciplina - Programação Web III
 Grupo SavPets
@@ -13,6 +20,18 @@ Grupo SavPets
 
 ##### Estudo de Caso – Sistema de Gestão
 > A SavPets é um sistema/organização voluntária, na qual ajudará os animais que forem encontrados e encaminhados para ela. Com esse sistema, será capaz de gerenciar de maneira eficiente e eficaz os dados e departamentos da empresa com o objetivo de tornar o trabalho mais claro e fácil, podendo se concentrar em outros aspectos. O sistema será capaz de permitir maior facilidade durante o gerenciamento e controle do funcionamento da organização, com funções claras e objetivas para todos que são responsáveis por registrar novos cadastros, adoções ou atualizações de registros, e aqueles que necessitam desenvolver relatórios e análises sobre os dados de cada atividade realizada pelos diferentes departamentos existentes. 
+
+### Tecnologias Usadas
+
+|Tecnologias| Descrição|
+|------|---------------|
+|SpringBoot|Spring Boot é uma ferramenta que nasceu a partir do Spring, um framework desenvolvido para a plataforma Java baseado nos padrões de projetos, inversão de controle e injeção de dependência.|
+|Thymeleaf|O Thymeleaf é um mecanismo de modelo Java XML/XHTML/HTML5 que pode funcionar em ambientes da Web e não Web. Ele é mais adequado para servir XHTML/HTML5 na camada de visualização de aplicativos da Web baseados em MVC|
+|JustValidation.Js| Biblioteca de Validação de campos|
+|ApexChart.Js| Biblioteca Open-Source de graficos para registro de dados|
+|MongoDB|MongoDB é um software de banco de dados orientado a documentos livre, de código aberto e multiplataforma .Classificado como um programa de banco de dados NoSQL, o MongoDB usa documentos semelhantes a JSON com esquemas|
+|dataTables| Biblioteca para a criação de tabelas |
+|SweetAlert2| Bibliotecas de alertas de aviso|
 
 ##### Product Backlog
 | Requisito |Temas| Descrição |
@@ -85,18 +104,6 @@ Grupo SavPets
 O modelo de dominio (Larman, 2006 - classes conceituais ou classes de negócio) foi definido considerando as seguintes classes:
 (![CRD SavPets](https://github.com/SavPets/SavPetsBackendSpring/assets/99415610/73318bc7-d08e-435b-af2c-0147eccd8633)
 
-
-### Tecnologias Usadas
-
-|Tecnologias| Descrição|
-|------|---------------|
-|SpringBoot|Spring Boot é uma ferramenta que nasceu a partir do Spring, um framework desenvolvido para a plataforma Java baseado nos padrões de projetos, inversão de controle e injeção de dependência.|
-|Thymeleaf|O Thymeleaf é um mecanismo de modelo Java XML/XHTML/HTML5 que pode funcionar em ambientes da Web e não Web. Ele é mais adequado para servir XHTML/HTML5 na camada de visualização de aplicativos da Web baseados em MVC|
-|JustValidation.Js| Biblioteca de Validação de campos|
-|ApexChart.Js| Biblioteca Open-Source de graficos para registro de dados|
-|MongoDB|MongoDB é um software de banco de dados orientado a documentos livre, de código aberto e multiplataforma .Classificado como um programa de banco de dados NoSQL, o MongoDB usa documentos semelhantes a JSON com esquemas|
-|dataTables| Biblioteca para a criação de tabelas |
-|SweetAlert2| Bibliotecas de alertas de aviso|
 
 ### Relatorio SonarLint
 
