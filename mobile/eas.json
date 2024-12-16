@@ -1,0 +1,33 @@
+{
+  "cli": {
+    "version": ">= 9.1.0",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "preview": {
+      "autoIncrement": true,
+      "ios": {
+        "simulator": true,
+        "autoIncrement": "buildNumber"
+      },
+      "android": {
+        "distribution": "internal",
+        "autoIncrement": "versionCode",
+        "buildType": "apk"
+      },
+      "channel": "preview"
+    },
+    "production": {
+      "autoIncrement": true,
+      "android": {
+        "autoIncrement": "versionCode",
+        "buildType": "app-bundle"
+      },
+      "ios": {
+        "image": "latest",
+        "autoIncrement": "buildNumber"
+      },
+      "channel": "production"
+    }
+  }
+}
