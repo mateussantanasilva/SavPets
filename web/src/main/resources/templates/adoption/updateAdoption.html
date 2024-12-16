@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<!--=============== HEAD ===============-->
+<head th:insert="~{fragments/management/headNoTable}"></head>
+
+<body class="adocoes">
+   <!--=============== HEADER ===============-->
+    <header th:insert="~{fragments/management/header}"></header>
+
+    <!--=============== PANEL ===============-->
+    <section class="wrapper">
+
+        <!--=============== ACCESSIBILITY BAR ===============-->
+        <div th:insert="~{fragments/accessibilityBar}"></div>
+
+         <!--=============== TOP BAR ===============-->
+        <section th:insert="~{fragments/management/topBar}"></section>
+    
+        <!--=============== CONTENT ===============-->
+        <main class="main">
+            <section class="main-content main-register">
+                <div class="main-content_box">
+                    <a class="btn btn-cancel" href="/adocoes">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" width="24" height="24" viewBox="0 0 256 256">
+                            <path d="M208,32H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM181.66,170.34a8,8,0,0,1-11.32,11.32L128,139.31,85.66,181.66a8,8,0,0,1-11.32-11.32L116.69,128,74.34,85.66A8,8,0,0,1,85.66,74.34L128,116.69l42.34-42.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path>
+                        </svg>
+                        Cancelar    
+                    </a>
+
+                    <div class="main-container_form">
+                        <form class="form" th:action="@{/atualizar-adocao/{id} (id=${adocao.id})}" th:object="${adocao}" method="post">
+                            <div class="form-instruction">
+                                <p>Preenchimento obrigatório</p><span>*</span>
+                            </div>
+
+                            <div class="form-dision">
+                                <div class="form-division_wrapper">
+                                    <label for="necessaryToSelect">Funcionário *</label>
+                                    <select id="necessaryToSelect" class="form-dision_inputfull" th:field="*{employee}">
+                                        <option selected hidden value="">Selecione uma opção</option>
+                                        <option th:each="Funcionario : ${funcionarios}" th:value="${Funcionario.name}" th:text="${Funcionario.name}"></option>
+                                    </select>
+                                </div>
+
+                                <div class="form-division_wrapper">
+                                    <label for="necessaryToSelect2">Cliente *</label>
+                                    <select id="necessaryToSelect2"  class="form-dision_inputfull" th:field="*{client}">
+                                        <option selected hidden value="">Selecione uma opção</option>
+                                        <option th:each="Cliente : ${clientes}" th:value="${Cliente.firstName}" th:text="${Cliente.firstName}"></option>
+                                    </select>
+                                </div>
+
+                                <div class="form-division_wrapper">
+                                    <label for="necessaryToSelect3">Animal *</label>
+                                    <select id="necessaryToSelect3" class="form-dision_inputfull" th:field="*{animalReport}">
+                                        <option selected hidden value="">Selecione uma opção</option>
+                                        <option th:each="AnimalReport : ${relatorioAnimal}" th:value="${AnimalReport.id}" th:text="${AnimalReport.animalName}"></option>
+                                    </select>
+                                </div>
+
+                                <div class="form-division_wrapper">
+                                    <label for="description">Relatório *</label>
+                                    <textarea class="form-dision_inputfull form-dision_textarea" cols="30" rows="10"
+                                    id="description" th:field="*{report}"></textarea>
+                                </div>
+
+                                <div class="form-division_wrapper">
+                                    <label for="campaignDate">Data da Adoção *</label>
+                                    <input class="form-dision_inputfull" type="date"  id="campaignDate" th:field="*{adoptionDate}" max="9999-12-31">
+                                </div>
+                            </div>
+
+                            <input type="submit" value="Atualizar" class="btn">
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </section>
+
+    <!--=============== SCRIPTS ===============-->
+    <div th:insert="~{fragments/management/scriptsNoTable}"></div>
+</body>
+</html>
