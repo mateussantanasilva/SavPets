@@ -1,14 +1,17 @@
 # SavPets
-Plataforma que permite gerenciar os dados internos da empresa responsável por cuidar dos animais, além de divulgar os pets que precisam de algum tipo ajuda por meio de campanhas de adoção.
+Plataforma integrada para gerenciar os dados internos da empresa responsável por cuidar dos animais e divulgar campanhas de adoção. Agora, além da versão web, o projeto conta com uma aplicação mobile voltada para a gestão administrativa, permitindo que usuários responsáveis possam gerenciar registros diretamente do aplicativo.
 
 <div align="center">
     <img src="./.github/front-cover.webp" width="90%" />
+    <img src="./.github/front-cover-mobile.webp" width="90%" />
 </div>
 
 ### Fatec ZL - Centro Paula Souza
 ##### Disciplina - Programação Web III
-Grupo SavPets
+
+**Grupo SavPets**
 - André Luiz
+- Fernanda Sena
 - Guilherme Gonçalves
 - Gustavo Nascimento
 - Mateus Santana
@@ -16,22 +19,27 @@ Grupo SavPets
 - Vicenzzo Toth
 
 ##### Processo de Desenvolvimento de Software - PDS
-> O PDS segue uma abordagem interativa incremental adaptada do Scrum. Cada interação tem uma definição de pronto estabelecida com objetivo de controlar a qualidade.
+> O PDS segue uma abordagem interativa incremental adaptada do Scrum. Cada interação tem uma definição de pronto estabelecida com o objetivo de controlar a qualidade.
 
 ##### Estudo de Caso – Sistema de Gestão
-> A SavPets é um sistema/organização voluntária, na qual ajudará os animais que forem encontrados e encaminhados para ela. Com esse sistema, será capaz de gerenciar de maneira eficiente e eficaz os dados e departamentos da empresa com o objetivo de tornar o trabalho mais claro e fácil, podendo se concentrar em outros aspectos. O sistema será capaz de permitir maior facilidade durante o gerenciamento e controle do funcionamento da organização, com funções claras e objetivas para todos que são responsáveis por registrar novos cadastros, adoções ou atualizações de registros, e aqueles que necessitam desenvolver relatórios e análises sobre os dados de cada atividade realizada pelos diferentes departamentos existentes. 
+> A SavPets é um sistema/organização voluntária que auxilia animais encontrados e encaminhados para ela. Com essa solução, é possível gerenciar de maneira eficiente os dados e departamentos da empresa, tornando o trabalho mais claro e fácil. Assim, os responsáveis podem se concentrar em outros aspectos importantes. O sistema proporciona funções claras e objetivas para registro de novos cadastros, adoções, atualizações e desenvolvimento de relatórios e análises sobre as atividades realizadas pelos diferentes departamentos.
 
 ### Tecnologias Usadas
 
 |Tecnologias| Descrição|
 |------|---------------|
-|SpringBoot|Spring Boot é uma ferramenta que nasceu a partir do Spring, um framework desenvolvido para a plataforma Java baseado nos padrões de projetos, inversão de controle e injeção de dependência.|
-|Thymeleaf|O Thymeleaf é um mecanismo de modelo Java XML/XHTML/HTML5 que pode funcionar em ambientes da Web e não Web. Ele é mais adequado para servir XHTML/HTML5 na camada de visualização de aplicativos da Web baseados em MVC|
-|JustValidation.Js| Biblioteca de Validação de campos|
-|ApexChart.Js| Biblioteca Open-Source de graficos para registro de dados|
-|MongoDB|MongoDB é um software de banco de dados orientado a documentos livre, de código aberto e multiplataforma .Classificado como um programa de banco de dados NoSQL, o MongoDB usa documentos semelhantes a JSON com esquemas|
-|dataTables| Biblioteca para a criação de tabelas |
-|SweetAlert2| Bibliotecas de alertas de aviso|
+|Spring Boot|Ferramenta baseada em Java para construção de aplicações robustas com padrões de projeto, inversão de controle e injeção de dependência.|
+|Thymeleaf|Mecanismo de modelo Java para criar páginas dinâmicas com XML/XHTML/HTML5.|
+|JustValidation.Js|Biblioteca para validação de campos em formulários.|
+|ApexChart.Js|Biblioteca Open-Source para criação de gráficos dinâmicos e interativos.|
+|MongoDB|Banco de dados NoSQL que usa documentos JSON-like para armazenar dados.|
+|dataTables|Ferramenta para criação de tabelas dinâmicas e interativas.|
+|SweetAlert2|Biblioteca para criar alertas customizáveis e interativos.|
+|React Native (mobile)|Framework para desenvolvimento de aplicativos móveis multiplataforma.|
+|Expo (mobile)|Ferramenta para simplificar o desenvolvimento e a entrega de aplicativos React Native.|
+|Axios (mobile)|Biblioteca para realizar requisições HTTP.|
+|React Query (mobile)|Gerenciamento de estado assíncrono para lidar com dados de APIs.|
+|NativeWind (mobile)|Biblioteca que combina Tailwind CSS com React Native para estilização dinâmica.|
 
 ##### Product Backlog
 | Requisito |Temas| Descrição |
