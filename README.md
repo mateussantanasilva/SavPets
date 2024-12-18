@@ -6,7 +6,14 @@ Plataforma integrada para gerenciar os dados internos da empresa responsável po
     <img src="./.github/front-cover-mobile.webp" width="90%" />
 </div>
 
-### Fatec ZL - Centro Paula Souza
+## 💻 Acesse o Protótipo
+
+O design foi criado com base em boas práticas de acessibilidade (WCAG).
+
+- [Protótipo no Figma - Mobile](https://www.figma.com/design/EUdyQUQDHOg1lRpn7GLDHK/SavPets-Mobile?node-id=1-4&t=fSOeGgD38I05Z96Y-1)
+- [Protótipo no Figma - Web](https://www.figma.com/design/ZYWm8LvncrVY6tqz5r2IEX/SavPets?node-id=2-3&t=TU8nYMlCxeehlbmB-1)
+
+## Fatec ZL - Centro Paula Souza
 ##### Disciplina - Programação Web III
 
 **Grupo SavPets**
